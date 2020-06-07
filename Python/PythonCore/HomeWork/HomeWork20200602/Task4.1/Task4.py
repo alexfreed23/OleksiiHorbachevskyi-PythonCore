@@ -5,7 +5,6 @@ Created on Tue Jun  2 22:05:07 2020
 
 @author: oleksiy
 """
-import sys
 
 a = ""
 b = ""
