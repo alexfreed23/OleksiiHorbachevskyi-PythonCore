@@ -10,4 +10,4 @@ import math
 katet_1 = input("Enter first right triangle's side:\n")
 katet_2 = input("Enter second right triangle's side:\n")
 
-print("Hypotenuse of your triangle is: ", math.sqrt((int(katet_1)**2)+(int(katet_2)**2)))
+print("Hypotenuse of your triangle is: ", math.sqrt((float(katet_1)**2)+(float(katet_2)**2)))
