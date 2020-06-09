@@ -9,5 +9,5 @@ import math
 
 radius = input("Enter radius of circle:\n")
 
-print("Perimetr of circle is: ", 2*math.pi*int(radius))
-print("Area of circle is: ", math.pi*(int(radius)**2))
+print("Perimetr of circle is: ", 2*math.pi*float(radius))
+print("Area of circle is: ", math.pi*(float(radius)**2))
