@@ -28,3 +28,5 @@ if (year % 4 == 0):
         print("The year is a leap year (it has 366 days)")
 else:
     print("The year is not a leap year (it has 365 days)")
+
+print("This year belongs to", year // 100 + 1, " century")
