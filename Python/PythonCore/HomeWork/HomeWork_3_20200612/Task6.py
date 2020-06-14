@@ -27,7 +27,7 @@ try:
     elif placeNumber % 2 != 0 and placeNumber <= 54 and placeNumber > 0:
         placeUpDown = "place is DOWN"
     else:
-        placeUpDown = "we can idetify Up or Down it is"
+        placeUpDown = "we cannot idetify Up or Down it is"
 
     print(coupeOrSide," and ", placeUpDown)
 
