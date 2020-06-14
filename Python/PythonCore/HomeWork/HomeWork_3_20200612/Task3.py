@@ -15,25 +15,28 @@ try:
         positiveOrNegative = "pozitive"
     else:
         positiveOrNegative = "zero"
-    if (len(str(abs(int(value)))) == 1):
+    
+    valueLength = len(str(abs(int(value))))
+    
+    if valueLength == 1:
         numbersCount = "one-digit"
-    elif len(str(abs(int(value)))) == 2:
+    elif valueLength == 2:
         numbersCount = "two-digits"
-    elif len(str(abs(int(value)))) == 3:
+    elif valueLength == 3:
         numbersCount = "three-digits"
-    elif len(str(abs(int(value)))) == 4:
+    elif valueLength == 4:
         numbersCount = "four-digits"
-    elif len(str(abs(int(value)))) == 5:
+    elif valueLength == 5:
         numbersCount = "five-digits"
-    elif len(str(abs(int(value)))) == 6:
+    elif valueLength == 6:
         numbersCount = "six-digits"
-    elif len(str(abs(int(value)))) == 7:
+    elif valueLength == 7:
         numbersCount = "seven-digits"
-    elif len(str(abs(int(value)))) == 8:
+    elif valueLength == 8:
         numbersCount = "eight-digits"
-    elif len(str(abs(int(value)))) == 9:
+    elif valueLength == 9:
         numbersCount = "nine-digits"
-    elif len(str(abs(int(value)))) == 10:
+    elif valueLength == 10:
         numbersCount = "ten-digits"
     else:
         numbersCount=str(len(str(abs(int(value))))) + " digits"
