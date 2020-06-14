@@ -7,7 +7,6 @@ Created on Sat Jun 13 15:50:39 2020
 
 Task 3
 """
-
 value = input("Please enter a number: \n")
 try:
     if int(value) < 0:
@@ -16,45 +15,25 @@ try:
         positiveOrNegative = "pozitive"
     else:
         positiveOrNegative = "zero"
-    if (len(value) == 1) and (positiveOrNegative == "pozitive"):
+    if (len(str(abs(int(value)))) == 1):
         numbersCount = "one-digit"
-    elif len(value) == 2 and (positiveOrNegative == "pozitive") :
+    elif len(str(abs(int(value)))) == 2:
         numbersCount = "two-digits"
-    elif len(value) == 3 and (positiveOrNegative == "pozitive"):
+    elif len(str(abs(int(value)))) == 3:
         numbersCount = "three-digits"
-    elif len(value) == 4 and (positiveOrNegative == "pozitive"):
+    elif len(str(abs(int(value)))) == 4:
         numbersCount = "four-digits"
-    elif len(value) == 5 and (positiveOrNegative == "pozitive"):
+    elif len(str(abs(int(value)))) == 5:
         numbersCount = "five-digits"
-    elif len(value) == 6 and (positiveOrNegative == "pozitive"):
+    elif len(str(abs(int(value)))) == 6:
         numbersCount = "six-digits"
-    elif len(value) == 7 and (positiveOrNegative == "pozitive"):
+    elif len(str(abs(int(value)))) == 7:
         numbersCount = "seven-digits"
-    elif len(value) == 8 and (positiveOrNegative == "pozitive"):
+    elif len(str(abs(int(value)))) == 8:
         numbersCount = "eight-digits"
-    elif len(value) == 9 and (positiveOrNegative == "pozitive"):
+    elif len(str(abs(int(value)))) == 9:
         numbersCount = "nine-digits"
-    elif len(value) == 10 and (positiveOrNegative == "pozitive"):
-        numbersCount = "ten-digits"
-    elif ((len(value) - 1) == 1) and (positiveOrNegative == "negative"):
-        numbersCount = "one-digit"
-    elif (len(value) - 1 == 2) and (positiveOrNegative == "negative") :
-        numbersCount = "two-digits"
-    elif (len(value) - 1 == 3) and (positiveOrNegative == "negative"):
-        numbersCount = "three-digits"
-    elif (len(value) - 1 == 4) and (positiveOrNegative == "negative"):
-        numbersCount = "four-digits"
-    elif (len(value) - 1 == 5) and (positiveOrNegative == "negative"):
-        numbersCount = "five-digits"
-    elif (len(value) - 1 == 6) and (positiveOrNegative == "negative"):
-        numbersCount = "six-digits"
-    elif (len(value) - 1 == 7) and (positiveOrNegative == "negative"):
-        numbersCount = "seven-digits"
-    elif (len(value) - 1 == 8) and (positiveOrNegative == "negative"):
-        numbersCount = "eight-digits"
-    elif (len(value) - 1 == 9) and (positiveOrNegative == "negative"):
-        numbersCount = "nine-digits"
-    elif (len(value) - 1 == 10) and (positiveOrNegative == "negative"):
+    elif len(str(abs(int(value)))) == 10:
         numbersCount = "ten-digits"
     else:
         numbersCount=str(len(str(abs(int(value))))) + " digits"
@@ -65,5 +44,3 @@ try:
     print(positiveOrNegative, numbersCount)
 except ValueError:
     print("That's not a number")
-
-
