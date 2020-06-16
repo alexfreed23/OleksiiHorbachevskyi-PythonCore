@@ -7,8 +7,7 @@ Created on Tue Jun 16 20:34:03 2020
 """
 
 
-for i in range(1,10):
-    for j in range(1,10):
-        print(i,"x", j, "=", i*j)
+for i in range(1,11):
+    for j in range(1,11):
+        print(j * i,"\t", end='')
     print()
-    
