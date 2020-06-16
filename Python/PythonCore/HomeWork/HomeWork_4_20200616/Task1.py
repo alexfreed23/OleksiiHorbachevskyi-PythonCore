@@ -19,4 +19,5 @@ while tryNumber <=10:
     else:
         print("Absolutely RIGHT!!!")
         break
+    tryNumber +=1 
 print("Secret number is: ", secretNumber)
