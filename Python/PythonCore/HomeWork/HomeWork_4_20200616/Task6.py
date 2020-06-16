@@ -14,7 +14,7 @@ while noNneedExit:
     enteredNumber = int(input("Enter number: "))
     if enteredNumber == 0:
         noNneedExit = False
-        continue
+        #continue
     if enteredNumber < 0:
         negative += 1
     if enteredNumber > 0:
