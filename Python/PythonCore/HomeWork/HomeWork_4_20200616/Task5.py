@@ -8,15 +8,15 @@ Created on Tue Jun 16 20:43:03 2020
 P = int(input("Enter number P: "))
 H = int(input("Enter number H: "))
 
-needExit = True
+noNneedExit = True
 sumEnteredIfLessP = 0
 productOgNumMoreH = 1
 countNumbersInRange = 0
 
-while needExit:
+while noNneedExit:
     enteredNumber = int(input("Enter number: "))
     if enteredNumber == P or enteredNumber == H:
-        needExit = False
+        noNneedExit = False
     if enteredNumber < P:
         sumEnteredIfLessP += enteredNumber
     if enteredNumber > H:
