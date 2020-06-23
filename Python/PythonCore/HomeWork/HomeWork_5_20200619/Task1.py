@@ -10,13 +10,16 @@ import string
 enteredText = input("Enter your text: ")
 newLine = ""
 i = 1
-newLetter = 97
 for letter in enteredText:
-    if i == 4:
-        if letter in string.ascii_letters:
-            print(letter)
-            letter = chr(newLetter)
-            newLetter += 1
+    if (i == 4) and (letter in string.ascii_letters):
+        newLetter = ord(letter) + 4
+        if newLetter >= 123:
+            newLetter = 96 + (newLetter - 123)
+            newLine += chr(newLetter)
+        elif newLetter >= 90 and newLetter < 97:
+            newLetter = 64 + (newLetter - 90)
+            newLine += chr(newLetter)
+        print(letter, "replaced to ", chr(newLetter))
         i = 0
     newLine += letter
     i += 1
