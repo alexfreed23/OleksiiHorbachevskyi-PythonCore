@@ -16,11 +16,12 @@ for letter in enteredText:
         if newLetter >= 123:
             newLetter = 96 + (newLetter - 123)
             newLine += chr(newLetter)
-        elif newLetter >= 90 and newLetter < 97:
-            newLetter = 64 + (newLetter - 90)
+        elif newLetter >= 91 and newLetter < 97:
+            newLetter = 64 + (newLetter - 91)
             newLine += chr(newLetter)
         print(letter, "replaced to ", chr(newLetter))
         i = 0
-    newLine += letter
+    else:
+        newLine += letter
     i += 1
 print(newLine)
