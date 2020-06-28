@@ -7,9 +7,9 @@ Created on Thu Jun 25 19:06:27 2020
 """
 
 enteredString = input("Enter string:")
-spacesCount = 0
+#spacesCount = 0
 
-for element in enteredString:
-    if ord(element) == 32:
-        spacesCount += 1
-print("In entered string ", spacesCount, " spaces")
+#for element in enteredString:
+#    if ord(element) == 32:
+#        spacesCount += 1
+print("In entered string ", enteredString.count(' '), "spaces")
