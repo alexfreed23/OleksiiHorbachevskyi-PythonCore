@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User manager</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<main>
+    <nav class="navigation">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/userslist">Users List</a></li>
+            <li><a href="/adduser">Add User</a></li>
+            <li><a href="/addgroup">Add Group</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+    <div class="page_header">
+    <h1>Add User</h1>
+<form method="POST">
+<label>First Name</label>
+<input type="text" name="firstname">
+<br>
+<label>Last Name</label>
+<input type="text" name="lastname">
+<br>
+<label>Age</label>
+<input type="text" name="age">
+<br>
+<label>Username</label>
+<input type="text" name="username">
+<br>
+
+<input type="submit" value="Save">
+</form>
+
+
+</main>
+<footer>
+    created by oleksii horbachevskyi 2020 year
+</footer>
+</body>
+</body>
+</html>

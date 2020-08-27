@@ -1,0 +1,21 @@
+{% extends "uerdetailstemplate.html" %}
+
+{% block content %}
+
+<h1>{{ user }}</h1>
+<table>
+    <thead>User dedails</thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Username</th>
+    </tr>
+    <tr>
+        <td class="userdetails"> {{ firstname }} </td>
+        <td class="userdetails"> {{ lastname }} </td>
+        <td class="userdetails"> {{ age }} </td>
+        <td class="userdetails"> {{ username }} </td>
+    </tr>
+</table>
+{% endblock %}
